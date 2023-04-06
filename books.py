@@ -20,3 +20,12 @@ async def get_book_by_title(book_title: str):
     for book in BOOKS:
         if book.get("title").casefold() == book_title.casefold():
             return book
+
+@app.get("/books/")
+async def get_books_by_category(category: str):
+    books_to_return = []
+    for book in BOOKS:
+        if book.get("category").casefold() == category.casefold():
+            books_to_return.append(book)
+    return books_to_return
+    
