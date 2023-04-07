@@ -29,6 +29,14 @@ async def get_books_by_category(category: str):
             books_to_return.append(book)
     return books_to_return
 
+@app.get("/books/byauthor/")
+async def get_all_books_by_author(author: str):
+    books_to_return = []
+    for book in BOOKS:
+        if book.get("author").casefold() == author.casefold():
+            books_to_return.append(book)
+    return books_to_return
+
 @app.get("/books/{book_author}/")
 async def get_book_by_author_and_category(book_author: str, category: str):
     books_to_return = []
