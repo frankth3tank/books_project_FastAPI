@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ## Usage
 1. Start the API server.
 ```
-uvicorn app.main:app --reload
+uvicorn books:app --reload
 ```
 2. Navigate to http://localhost:8000/docs in your web browser to access the Swagger UI. Here, you can test the different endpoints available in the API.
 
