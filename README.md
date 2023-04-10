@@ -31,14 +31,14 @@ uvicorn books:app --reload
 2. Navigate to http://localhost:8000/docs in your web browser to access the Swagger UI. Here, you can test the different endpoints available in the API.
 
 ## Endpoints
-- GET /books: Returns a list of all books.
-- GET /books/{book_title}: Returns the details of a single book by providing the title.
-- GET /books/?category: Returns a list of all books that match a specific category.
-- GET /books/byauthor/?author: Returns a list of all books that match a specific author.
-- GET /books/{book_author}/?category: Returns a list of all books that match a specific author and category.
-- POST /books/create_book: Creates a new book.
-- PUT /books/update_book: Updates the details of a book that matches the title.
-- DELETE /books/delete_book/{book_title}: Deletes a book that matches the title.
+- `GET /books` Returns a list of all books.
+- `GET /books/{book_title}` Returns the details of a single book by providing the title.
+- `GET /books/?category` Returns a list of all books that match a specific category.
+- `GET /books/byauthor/?author` Returns a list of all books that match a specific author.
+- `GET /books/{book_author}/?category` Returns a list of all books that match a specific author and category.
+- `POST /books/create_book` Creates a new book.
+- `PUT /books/update_book` Updates the details of a book that matches the title.
+- `DELETE /books/delete_book/{book_title}` Deletes a book that matches the title.
 
 ## Contributing
 If you would like to contribute to this project, please open a pull request. We welcome contributions of all kinds, including bug fixes, new features, and documentation improvements.
